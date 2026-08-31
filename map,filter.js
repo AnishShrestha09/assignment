@@ -120,4 +120,49 @@ console.log(rightgmail);
 
 // section 4~
 
+const total = products.reduce((value,total)=>{
+  return total+value.quantity
+ },0)
+ 
+console.log(total);
+
 // total quantity of all products 
+const total1 = products.reduce((total, value)=>{
+  total =value["quantity"] +total
+  return total;
+},0)
+
+
+console.log(total1)
+
+
+// count total products
+
+let products1 = ['laptop', 'computer', 'desktop']
+
+const quantity1 = products1.reduce((first)=> {
+  first =  first+1;
+  return first;
+},0)
+
+console.log(quantity1)
+
+// count the total price 
+
+const totalPrice = products.reduce((total,product)=>{
+  total = product.price +total;
+  return total;
+},0)
+console.log("totalprice")
+
+console.log(totalPrice)
+
+
+// create a comma seperated string
+const p = products1.reduce((price, products)=>{
+  price+=`${products},`
+  return price
+},"")
+
+console.log(p)
+
