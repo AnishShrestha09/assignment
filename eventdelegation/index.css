@@ -1,0 +1,17 @@
+#flex{
+    display: flex;
+}
+
+#students{
+    height: 500px;
+    border: 1px solid black;
+}
+.onestudent{
+    display: flex;
+    width: 250px;
+    /* height: 500px; */
+    border: 1px solid saddlebrown ;
+    margin: 20px;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
