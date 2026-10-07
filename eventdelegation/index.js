@@ -24,7 +24,7 @@ formm.addEventListener('submit', (e) => {
 student.addEventListener('click',(e)=>{
 
     if(e.target.tagName ==="BUTTON"){
-        console.log("button clicked")
+        e.target.closest(".onestudent").remove()
     }
     
 })

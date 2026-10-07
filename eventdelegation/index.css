@@ -1,17 +1,94 @@
-#flex{
-    display: flex;
+/* ---------- General ---------- */
+
+* {
+    box-sizing: border-box;
 }
 
-#students{
-    height: 500px;
-    border: 1px solid black;
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
 }
-.onestudent{
+
+
+/* ---------- Heading ---------- */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Form ---------- */
+
+#formm {
     display: flex;
-    width: 250px;
-    /* height: 500px; */
-    border: 1px solid saddlebrown ;
-    margin: 20px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#username {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#formm button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* ---------- Student Container ---------- */
+
+#students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* ---------- Student Card ---------- */
+
+.onestudent {
+    width: 500px;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    /* gap: 50px; */
+
+    padding: 15px 20px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+/* ---------- Student Name ---------- */
+
+.onestudent p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* ---------- Delete Button ---------- */
+
+.delete {
+    padding: 8px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
 }
